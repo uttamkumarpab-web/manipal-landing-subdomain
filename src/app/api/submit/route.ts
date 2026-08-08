@@ -3,6 +3,7 @@ import { Resend } from "resend";
 import { supabaseAdmin } from "@/lib/supabase";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const adminEmail = process.env.ADMIN_EMAIL ?? "contact@radhyaeducationacademy.com";
 
 export async function POST(request: Request) {
   try {
@@ -21,19 +22,19 @@ export async function POST(request: Request) {
       );
     }
 
-    const { error: dbError } = await supabaseAdmin.from("lead").insert({
-      id: crypto.randomUUID(),
+    const { error: dbError } = await supabaseAdmin.from("manipal_counselling_form").insert({
       name,
       email,
-      contactno,
-      selectcourse,
+      phone: contactno,
+      course: selectcourse,
       state,
+      channel: "manipal-online-mba",
     });
 
     if (dbError) throw dbError;
 
     await resend.emails.send({
-      from: "MBA Online Info <noreply@mbaonlineinfo.com>",
+      from: `Radhya Education <contact@radhyaeducationacademy.com>`,
       to: email,
       subject: "Thank you for your inquiry",
       html: `
@@ -45,8 +46,8 @@ export async function POST(request: Request) {
     });
 
     await resend.emails.send({
-      from: "MBA Online Info <noreply@mbaonlineinfo.com>",
-      to: "noreply@mbaonlineinfo.com",
+      from: `Radhya Education <contact@radhyaeducationacademy.com>`,
+      to: adminEmail,
       subject: `New inquiry: ${name} - ${selectcourse}`,
       html: `
         <h2>New Lead Submission</h2>

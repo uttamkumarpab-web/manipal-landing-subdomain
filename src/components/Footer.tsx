@@ -7,7 +7,7 @@ export default function Footer() {
        
         <p className="text-sm leading-relaxed">
           <span className="text-yellow-400 font-semibold">Disclaimer:</span> We
-          act solely as an information partner and do not conduct or facilitate
+          act solely as an information provider and do not conduct or facilitate
           admissions to Manipal. For admissions, please visit the official
           Manipal website or contact the university directly. Manipal University
           holds full rights to request changes or removal of any non-relevant
@@ -16,26 +16,23 @@ export default function Footer() {
         </p>
 
         <p className="text-sm leading-relaxed">
-          As an Authorized Enrollment Partner (AEP) of Manipal Online, we
-          display and showcase program information of Manipal Online. Admission,
-          program delivery, and examination are solely managed by Manipal
-          Online, and as an AEP, we have no role to play in it.
-        </p>
+         As an Online & Distance Education information provider, we showcase program information about Manipal Online for informational purposes. The information displayed on our website is referred to and compiled from the official Manipal Online website and may be subject to change as per their latest updates.
+</p>
 
         <p className="text-sm mt-4">
-          &copy; {new Date().getFullYear()} https://mbaonlineinfo.com/ | All
+          &copy; {new Date().getFullYear()} https://radhyaeducationacademy.com/ | All
           rights reserved
         </p>
 
         <div className="flex justify-center gap-6">
           <Link
-            href="/privacy-policy/"
+            href="https://radhyaeducationacademy.com/privacy-policy/"
             className="underline text-yellow-400 hover:text-white"
           >
             Privacy Policy
           </Link>
           <Link
-            href="/terms-and-conditions/"
+            href="https://radhyaeducationacademy.com/terms-and-conditions/"
             className="underline text-yellow-400 hover:text-white"
           >
             Terms &amp; Conditions

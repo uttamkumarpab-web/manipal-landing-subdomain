@@ -2,8 +2,8 @@
 
 export default function Header({ onApply }: { onApply: () => void }) {
   return (
-    <header className="w-full" style={{ zIndex: 99 }}>
-      <div className="w-full mt-4 px-4">
+    <header className="w-full bg-white p-2 shadow-md rounded-xl" style={{ zIndex: 99 }}>
+      <div className="w-full mt-2 px-4">
         <div className="flex items-center justify-between flex-wrap">
           <div className="w-1/3 md:w-auto">
             <div className="logo">

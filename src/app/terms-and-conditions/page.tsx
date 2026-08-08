@@ -11,7 +11,7 @@ export default function TermsAndConditions() {
             <p className="mt-2 text-sm text-gray-600">
               Last Updated:{" "}
               <span className="font-semibold text-[#0C1446]">
-                September 19, 2025
+                August 10, 2026
               </span>
             </p>
           </div>

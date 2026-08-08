@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
             <p className="mt-2 text-sm text-gray-600">
               Last Updated:{" "}
               <span className="font-semibold text-[#0C1446]">
-                November 01, 2025
+                August 10, 2026
               </span>
             </p>
           </div>
