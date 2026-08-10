@@ -34,16 +34,16 @@ export default function HeroSection({
             </p>
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Online MBA from
-              <span className="block text-[#ff6b35]">
-                Manipal University
+              Manipal Online MBA
+              <span className="block text-2xl md:text-3xl text-[#ff6b35]">
+                  Fees, Eligibility & Admission 2026
               </span>
             </h1>
 
             <p className="text-gray-600 text-lg mt-5 max-w-lg">
-              Advance your career with a globally recognized degree from a
-              trusted university.
+              Explore the Manipal Online MBA program, including fees, eligibility, specializations, admission process and key program benefits.
             </p>
+
 
            <div className="mt-8 bg-white rounded-2xl p-2 max-w-lg shadow-sm">
   <div className="grid grid-cols-4 gap-2">

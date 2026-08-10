@@ -14,6 +14,7 @@ import DegreeSection from "@/components/DegreeSection";
 import FAQSection from "@/components/FAQSection";
 import SpecializationsSection from "@/components/Specialization";
 import AdmissionProcessSection from "@/components/Admission";
+import ManipalBenefits from "./ManipalBenefits";
 
 export default function HomeClient() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -23,7 +24,7 @@ export default function HomeClient() {
       <HeroSection onApply={() => setModalOpen(true)} />
       <RankingsSection onApply={() => setModalOpen(true)} />
       <SpecializationsSection onApply={() => setModalOpen(true)} />
-      <CoursesSection onApply={() => setModalOpen(true)} />
+      <ManipalBenefits onApply={() => setModalOpen(true)} />
       <AdvantageSection onApply={() => setModalOpen(true)} />
       <BenefitsSection />
       <DegreeSection onApply={() => setModalOpen(true)} />

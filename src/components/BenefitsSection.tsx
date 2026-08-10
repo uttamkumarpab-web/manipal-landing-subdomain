@@ -10,7 +10,7 @@ export default function BenefitsSection() {
     <section className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto px-4">
        <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12">
-        Online Manipal <span className="text-[#F15A29]">Advantages</span>
+         Advantages of <span className="text-[#F15A29]"> Manipal Online MBA</span>
       </h2>
         <div className="flex flex-wrap">
           {benefits.map((b, i) => (

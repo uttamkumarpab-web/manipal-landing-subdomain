@@ -3,9 +3,54 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Online Manipal | UGC-Entitled Online Degree Programs",
+  metadataBase: new URL(
+    "https://onlinembamanipal.radhyaeducationacademy.com"
+  ),
+
+  title: {
+    default: "Manipal Online MBA 2026 – Fees, Eligibility & Admission",
+    template: "%s | Manipal Online MBA",
+  },
+
   description:
-    "Earn a recognized online degree from Online Manipal and accelerate your career with flexible, industry-relevant programs from leading universities.",
+    "Explore Manipal Online MBA fees, eligibility, specializations, admission process and other key details. Get expert guidance for your Manipal Online MBA admission.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  openGraph: {
+    type: "website",
+    url: "https://onlinembamanipal.radhyaeducationacademy.com/",
+    title: "Manipal Online MBA 2026 – Fees, Eligibility & Admission",
+    description:
+      "Explore Manipal Online MBA fees, eligibility, specializations, admission process and other key details.",
+    siteName: "Radhya Education Academy",
+    locale: "en_IN",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Manipal Online MBA 2026 – Fees, Eligibility & Admission",
+    description:
+      "Explore Manipal Online MBA fees, eligibility, specializations, admission process and other key details.",
+  },
+
+  icons: {
+    icon: "/landing/degree-admission.co.in/assets/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -39,7 +39,7 @@ export default function AdmissionProcessSection() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12 lg:mb-16">
-        Simple <span className="text-[#F15A29]">Admission Process</span>
+        Manipal Online MBA <span className="text-[#F15A29]">Admission Process</span>
       </h2>
 
         {/* Steps */}

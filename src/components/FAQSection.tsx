@@ -46,7 +46,8 @@ export default function FAQSection() {
     <section className="py-12 md:py-16 bg-[#f8f8f8]">
       <div className="max-w-6xl mx-auto px-4">
          <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-3">
-          Frequently Asked Questions
+          Frequently Asked Questions About Manipal Online MBA
+
         </h2>
 
         <p className="text-center text-gray-600 mb-10">

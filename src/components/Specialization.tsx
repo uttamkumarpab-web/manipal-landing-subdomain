@@ -36,7 +36,7 @@ export default function SpecializationsSection({
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
        <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12">
-        Popular <span className="text-[#F15A29]">Specializations</span>
+         Manipal Online MBA <span className="text-[#F15A29]">Specializations</span>
       </h2>
 
         {/* Cards */}
