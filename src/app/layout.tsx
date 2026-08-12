@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Manipal Online MBA 2026 – Fees, Eligibility & Admission",
     description:
       "Explore Manipal Online MBA fees, eligibility, specializations, admission process and other key details.",
-    siteName: "Radhya Education Academy",
+    siteName: "Online MBA Manipal",
     locale: "en_IN",
   },
 
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/landing/degree-admission.co.in/assets/images/favicon.png",
+    icon: "/images/favicon.png",
   },
 };
 
@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/landing/degree-admission.co.in/assets/images/favicon.png" />
+        <link rel="icon" href="/images/favicon.png" />
 
         {/* ✅ GOOGLE TAG FIX */}
         <Script
@@ -82,6 +82,36 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'AW-18215221480');
           `}
         </Script>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Radhya Education Academy",
+              url: "https://onlinembamanipal.radhyaeducationacademy.com/",
+              logo: "https://onlinembamanipal.radhyaeducationacademy.com/images/favicon.png",
+              sameAs: ["https://radhyaeducationacademy.com/"],
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Online MBA Manipal",
+              url: "https://onlinembamanipal.radhyaeducationacademy.com/",
+              publisher: {
+                "@type": "Organization",
+                name: "Radhya Education Academy",
+              },
+            }),
+          }}
+        />
 
       </head>
       <body className="font-sans text-gray-800 antialiased" style={{ fontFamily: "Inter, sans-serif" }}>

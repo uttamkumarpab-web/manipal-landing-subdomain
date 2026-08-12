@@ -72,7 +72,7 @@ export default function AdvantageSection({ onApply }: { onApply: () => void }) {
 
         <div className="w-full flex justify-center">
   <Image
-    src="/landing/degree-admission.co.in/assets/images/partners.png"
+    src="/images/partners.png"
     alt="Hiring Partners"
     width={1400}
     height={400}

@@ -52,7 +52,7 @@ export default function CoursesSection({ onApply }: { onApply: () => void }) {
               </ul>
 
               <img
-                src="/landing/degree-admission.co.in/assets/images/logo.webp"
+                src="/images/logo.webp"
                 alt="Manipal University Jaipur"
                 className="w-40 h-auto mb-6"
               />

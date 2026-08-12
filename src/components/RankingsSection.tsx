@@ -39,7 +39,7 @@ export default function RankingsSection({ onApply }: { onApply: () => void }) {
             >
               <div className="w-[70px] md:w-[90px] mx-auto mb-4">
                 <img
-                  src={`/landing/degree-admission.co.in/assets/images/${r.img}`}
+                  src={`/images/${r.img}`}
                   alt={r.title}
                   className="w-full h-auto rounded-full"
                 />

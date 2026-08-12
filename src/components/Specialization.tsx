@@ -4,23 +4,23 @@ import { ArrowRight } from "lucide-react";
 const specializations = [
   {
     title: "MBA in Finance",
-    image:"/landing/degree-admission.co.in/assets/images/finance.png"
+    image:"/images/finance.png"
   },
   {
     title: "MBA in Marketing",
-    image: "/landing/degree-admission.co.in/assets/images/marketing.png",
+    image: "/images/marketing.png",
   },
   {
     title: "MBA in Human Resource",
-    image: "/landing/degree-admission.co.in/assets/images/hr.png",
+    image: "/images/hr.png",
   },
   {
     title: "MBA in Data Science",
-    image: "/landing/degree-admission.co.in/assets/images/data.png",
+    image: "/images/data.png",
   },
   {
     title: "MBA in Business Analytics",
-    image: "/landing/degree-admission.co.in/assets/images/business.png",
+    image: "/images/business.png",
   },
 ];
 

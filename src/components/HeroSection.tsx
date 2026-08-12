@@ -19,7 +19,7 @@ export default function HeroSection({
     <section
       className="relative bg-cover bg-center overflow-hidden"
       style={{
-        backgroundImage: "url(/landing/degree-admission.co.in/assets/images/heroImage.png)",
+        backgroundImage: "url(/images/heroImage.png)",
       }}
     >
       <Header onApply={onApply} />
@@ -53,7 +53,7 @@ export default function HeroSection({
         className="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-2 text-center md:text-left"
       >
         <img
-          src={`/landing/degree-admission.co.in/assets/images/${item.img}`}
+          src={`/images/${item.img}`}
           alt={item.text}
           className="w-7 h-7 md:w-8 md:h-8 object-contain flex-shrink-0"
         />

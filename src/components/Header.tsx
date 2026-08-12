@@ -8,7 +8,7 @@ export default function Header({ onApply }: { onApply: () => void }) {
           <div className="w-1/3 md:w-auto">
             <div className="logo">
               <img
-    src="/landing/degree-admission.co.in/assets/images/logo.webp"
+    src="/images/logo.webp"
     alt="Manipal Logo"
     className="h-auto w-auto max-w-[240px] md:max-w-[280px]"
   />

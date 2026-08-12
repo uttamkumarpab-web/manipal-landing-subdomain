@@ -17,7 +17,7 @@ export default function DegreeSection({ onApply }: { onApply: () => void }) {
             <div className="flex justify-center">
               <div className="bg-white p-2 md:p-3 rounded-lg shadow-xl max-w-xl w-full">
                 <Image
-                  src="/landing/degree-admission.co.in/assets/images/certificate.png"
+                  src="/images/certificate.png"
                   alt="Manipal Online MBA Degree Certificate"
                   width={900}
                   height={650}
