@@ -87,22 +87,6 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Ads / Google Tag */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18215221480"
-          strategy="afterInteractive"
-        />
-
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('js', new Date());
-            gtag('config', 'AW-18215221480');
-          `}
-        </Script>
-
         {/* Organization Schema */}
         <script
           type="application/ld+json"
