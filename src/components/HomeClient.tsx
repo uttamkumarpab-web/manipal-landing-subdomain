@@ -29,7 +29,7 @@ export default function HomeClient() {
       <BenefitsSection />
       <DegreeSection onApply={() => setModalOpen(true)} />
       <FeaturesSection />
-      <AdmissionProcessSection />
+      <AdmissionProcessSection onApply={() => setModalOpen(true)} />
       <FAQSection />
       <Footer />
       <MobileStickyBar onApply={() => setModalOpen(true)} />

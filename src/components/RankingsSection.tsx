@@ -1,24 +1,28 @@
-
+import Link from "next/link"; 
 const rankings = [
   {
     img: "naac.webp",
     title: "NAAC",
     text: "National Assessment and Accreditation Council",
+    url: "https://radhyaeducationacademy.com/blogs/is-naac-approval-mandatory-for-online-mba/"
   },
   {
     img: "ugc.webp",
     title: "UGC",
     text: "University Grants Commission",
+    url: "https://radhyaeducationacademy.com/ugc-approved-universities/"
   },
   {
     img: "AICTE.jpg.webp",
     title: "AICTE",
     text: "All India Council for Technical Education",
+    url: "https://radhyaeducationacademy.com/blogs/is-aicte-approval-mandatory-for-online-mba/"
   },
   {
     img: "WES-2.webp",
     title: "WES",
     text: "World Education Services",
+    url: "https://radhyaeducationacademy.com/blogs/is-wes-approval-mandatory-for-online-mba/"
   },
 ];
 
@@ -31,31 +35,32 @@ export default function RankingsSection({ onApply }: { onApply: () => void }) {
            
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4  gap-4 md:gap-6">
-          {rankings.map((r, i) => (
-            <div
-              key={i}
-              className="text-center p-4 md:p-5 bg-[#F4E9DD] rounded-2xl shadow-md hover:-translate-y-1 transition-transform"
-            >
-              <div className="w-[70px] md:w-[90px] mx-auto mb-4">
-                <img
-                  src={`/images/${r.img}`}
-                  alt={r.title}
-                  className="w-full h-auto rounded-full"
-                />
-              </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+  {rankings.map((r, i) => (
+    <Link
+      key={i}
+      href={r.url}
+      className="block text-center p-4 md:p-5 bg-[#F4E9DD] rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer"
+      aria-label={`Learn more about ${r.title}`}
+    >
+      <div className="w-[70px] md:w-[90px] mx-auto mb-4">
+        <img
+          src={`/images/${r.img}`}
+          alt={r.title}
+          className="w-full h-auto rounded-full"
+        />
+      </div>
 
-              <h3 className="text-base md:text-lg font-bold text-gray-800 mb-2">
-                {r.title}
-              </h3>
+      <h3 className="text-base md:text-lg font-bold text-gray-800 mb-2">
+        {r.title}
+      </h3>
 
-              <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
-                {r.text}
-              </p>
-            </div>
-          ))}
-        </div>
-
+      <p className="text-xs md:text-sm text-gray-700 leading-relaxed">
+        {r.text}
+      </p>
+    </Link>
+  ))}
+</div>
         <div className="flex justify-center">
           <button
             onClick={onApply}

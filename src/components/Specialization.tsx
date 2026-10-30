@@ -1,26 +1,32 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const specializations = [
   {
     title: "MBA in Finance",
-    image:"/images/finance.png"
+    image: "/images/finance.png",
+    url: "https://radhyaeducationacademy.com/blogs/online-mba-financial-management/",
   },
   {
     title: "MBA in Marketing",
     image: "/images/marketing.png",
+    url: "https://radhyaeducationacademy.com/blogs/online-mba-in-marketing-management/",
   },
   {
-    title: "MBA in Human Resource",
+    title: "MBA in Healthcare",
     image: "/images/hr.png",
+    url: "https://radhyaeducationacademy.com/blogs/mba-in-hospital-management-2026/",
   },
   {
-    title: "MBA in Data Science",
+    title: "MBA in BFSI",
     image: "/images/data.png",
+    url: "https://radhyaeducationacademy.com/blogs/online-mba-in-bfsi-manipal-jaipur/",
   },
   {
-    title: "MBA in Business Analytics",
+    title: "MBA in HR Management",
     image: "/images/business.png",
+    url: "https://radhyaeducationacademy.com/blogs/online-mba-hr-management/",
   },
 ];
 
@@ -35,9 +41,22 @@ export default function SpecializationsSection({
     <section className="py-12 bg-[#f8f8f8]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
-       <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12">
-         Manipal Online MBA <span className="text-[#F15A29]">Specializations</span>
-      </h2>
+        <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mb-12">
+          Manipal Online MBA{" "}
+          <span className="text-[#F15A29]">Specializations</span>
+        </h2>
+
+        <p className="text-center text-sm md:text-base text-gray-600 max-w-3xl mx-auto -mt-6 mb-8 leading-relaxed">
+          Not sure which MBA specialization to choose? Explore how AI is
+          transforming management careers and discover the{" "}
+          <Link
+            href="https://radhyaeducationacademy.com/blogs/mba-specialization-in-age-of-ai/"
+            className="text-[#F15A29] font-semibold hover:underline underline-offset-4 transition"
+          >
+            best MBA specializations in the age of AI
+          </Link>{" "}
+          before making your decision.
+        </p>
 
         {/* Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
@@ -62,12 +81,12 @@ export default function SpecializationsSection({
                   {item.title}
                 </h3>
 
-                <button
-                  onClick={onApply}
-                  className="mt-2 border-2 border-[#ff6b35] text-[#ff6b35] font-semibold rounded-xl py-2 px-2 hover:bg-[#ff6b35] hover:text-white transition"
+                <Link
+                  href={item.url}
+                  className="mt-2 border-2 border-[#ff6b35] text-[#ff6b35] font-semibold rounded-xl py-2 px-2 hover:bg-[#ff6b35] hover:text-white transition text-center"
                 >
-                  Enquire Now
-                </button>
+                  Explore Now
+                </Link>
               </div>
             </div>
           ))}

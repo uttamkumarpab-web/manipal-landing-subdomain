@@ -2,6 +2,7 @@
 
 import Header from "./Header";
 import InquiryForm from "./InquiryForm";
+import Link from "next/link";
 
 export default function HeroSection({
   onApply,
@@ -40,7 +41,7 @@ export default function HeroSection({
               </span>
             </h1>
 
-            <p className="text-gray-600 text-lg mt-5 max-w-lg">
+            <p className="text-gray-800 text-lg mt-5 max-w-lg">
               Explore the Manipal Online MBA program, including fees, eligibility, specializations, admission process and key program benefits.
             </p>
 
@@ -78,6 +79,25 @@ export default function HeroSection({
 </div>
 
          <div className="flex flex-nowrap max-w-lg gap-3 mt-8">
+          <Link
+  href="https://radhyaeducationacademy.com/online-mba-manipal/"
+  className="w-1/2 bg-[#ff6b35] hover:bg-[#e95a26] text-white px-3 md:px-6 py-3 md:py-4 rounded-lg font-semibold transition text-sm md:text-base flex items-center justify-center gap-1 md:gap-2"
+>
+  <span>Get Program Details</span>
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      className="w-4 h-4 md:w-5 md:h-5 text-white shrink-0"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M9 18l6-6-6-6" />
+    </svg>
+</Link>
+
   <button
     onClick={onApply}
     className="w-1/2 bg-[#ff6b35] hover:bg-[#e95a26] text-white px-3 md:px-6 py-3 md:py-4 rounded-lg font-semibold transition text-sm md:text-base flex items-center justify-center gap-1 md:gap-2"
@@ -94,27 +114,6 @@ export default function HeroSection({
       strokeLinejoin="round"
     >
       <path d="M9 18l6-6-6-6" />
-    </svg>
-  </button>
-
-  <button
-    onClick={onApply}
-    className="w-1/2 bg-[#ff6b35] hover:bg-[#e95a26] text-white px-3 md:px-6 py-3 md:py-4 rounded-lg font-semibold transition text-sm md:text-base flex items-center justify-center gap-1 md:gap-2"
-  >
-    <span>Download Brochure</span>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      className="w-4 h-4 md:w-5 md:h-5 text-white shrink-0"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-      <polyline points="7 10 12 15 17 10" />
-      <line x1="12" y1="15" x2="12" y2="3" />
     </svg>
   </button>
 </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 const advantages = [
@@ -69,6 +70,18 @@ export default function AdvantageSection({ onApply }: { onApply: () => void }) {
          <h2 className="text-2xl md:text-4xl font-extrabold text-[#0C1446] text-center mt-10 mb-8">
         Our <span className="text-[#F15A29]">Partner Companies</span>
       </h2>
+
+      <p className="text-center text-sm md:text-base text-gray-600 max-w-4xl mx-auto -mt-4 mb-6 leading-relaxed">
+  Looking to understand your career opportunities after completing an MBA?
+  Explore the{" "}
+  <Link
+    href="/blogs/manipal-online-mba-placement/"
+    className="text-[#F15A29] font-semibold hover:underline underline-offset-4 transition"
+  >
+    Manipal Online MBA placement opportunities
+  </Link>
+  , including hiring partners, career prospects, and potential job roles after graduation.
+</p>
 
         <div className="w-full flex justify-center">
   <Image
